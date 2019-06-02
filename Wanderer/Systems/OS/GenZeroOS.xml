@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OS generation="0">
+	<CommandTypes>
+		<CommandType name="Movement">
+			<Value>Forward</Value>
+			<Value>Left</Value>
+			<Value>Right</Value>
+			<Value>Backward</Value>
+		</CommandType>
+		<CommandType name="Communication">
+			<Value>Ping</Value>
+			<Value>Status</Value>
+			<Value>TransmitOS</Value>
+			<Value>Acknowledge</Value>
+			<Value>RecieveOS</Value>
+		</CommandType>
+	</CommandTypes>
+	<Events>
+		<Event name="Bump">
+			<Parameter name="Where">
+				<Value>FrontRight</Value>
+				<Value>FrontLeft</Value>
+				<Value>BackRight</Value>
+				<Value>BackLeft</Value>
+			</Parameter>
+		</Event>
+		<Event name="Receive">
+			<Parameter name="Data">
+				<Values></Values>
+			</Parameter>
+		</Event>
+	</Events>
+	<Actions>
+		<Action name="Move" CommandType="Movement" Event="Bump" />
+		<Action name="Communicate" CommandType="Communication" Event="Receive"/>
+	</Actions>
+
+	<Steps>
+		<Step></Step>
+	</Steps>
+	<Rules>
+		<Rule></Rule>
+	</Rules>
+</OS>

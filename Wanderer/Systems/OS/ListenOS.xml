@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OS generation="-">
+	<CommandTypes>
+		<CommandType name="Listen">
+			<Value>Start</Value>
+			<Value>Stop</Value>
+		</CommandType>
+	</CommandTypes>
+	<Events>
+		<Event name="Hear">
+			<Parameter name="Through">
+				<Value>IR</Value>
+				<Value>RF</Value>
+				<Value>Both</Value>
+			</Parameter>
+		</Event>
+	</Events>
+	<Actions>
+		<Action name="Move" CommandType="Movement" Event="Bump" />
+		<Action name="Communicate" CommandType="Communication" Event="Receive"/>
+	</Actions>
+
+	<Steps>
+		<Step></Step>
+	</Steps>
+	<Rules>
+		<Rule></Rule>
+	</Rules>
+</OS>

@@ -1,0 +1,21 @@
+Generation 0
+
+Move
+	if Bump
+		Inquire
+			if Found
+				Check Generation
+					if own <
+						Recieve OS
+					else if own >
+						Transmit OS
+			else Adjust Direction
+
+
+Move = go straight
+Bump = a bump sensor hit
+Inquire = find another bot via comm types (IR, RF or if both then randomly pick one to try first)
+Found = another bot responds to the Inquire
+Check Generations = compare the bots OS generation to own
+Receive OS =
+Transmit OS = send the state to the new bot
